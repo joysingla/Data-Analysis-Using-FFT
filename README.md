@@ -44,6 +44,7 @@ After activation, your terminal prompt should change to indicate you're working 
 Once your virtual environment is set up and activated, you need to install the required dependencies for the project.
 
 First, download the repository to your local machine:
+
    git clone https://github.com/Karanveer69/Data-Analysis-Using-FFT-DFT-and-DTW.git
 
 Install the dependencies by running:
