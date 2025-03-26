@@ -55,9 +55,9 @@ Install the dependencies by running:
 
 After installation is complete, you can verify that all the libraries are installed by running the following Python commands:
 
-import numpy as np
-import matplotlib.pyplot as plt
-import pandas as pd
-import dtw
+   import numpy as np
+   import matplotlib.pyplot as plt
+   import pandas as pd
+   import dtw
 
 If no errors appear, the installation was successful. 
