@@ -6,7 +6,7 @@ This repository provides generalized code for analyzing time series data using v
 The project aims to provide a flexible framework for applying these time series analysis techniques to IMU data, which can be adapted for a range of different applications such as sensor data analysis, motion tracking, and anomaly detection.
 
 
-Features -
+Features -                                                                                                                                                                                                                                                   
 1.FFT (Fast Fourier Transform): Efficient algorithm to compute the Discrete Fourier Transform (DFT) of a time series, enabling frequency domain analysis.
 
 2.DFT (Discrete Fourier Transform): Provides an understanding of the frequency components in the time series data.
