@@ -37,8 +37,7 @@ b.On macOS/Linux:
 
 After activation, your terminal prompt should change to indicate you're working inside the virtual environment.
 
-
-
+   
 2. Installing Required Libraries
 
 Once your virtual environment is set up and activated, you need to install the required dependencies for the project.
@@ -47,16 +46,16 @@ First, download the repository to your local machine:
 
    git clone https://github.com/Karanveer69/Data-Analysis-Using-FFT-DFT-and-DTW.git
 
-Install the dependencies by running:
+3. Change Directory - Run the following command in your terminal:
+    cd Data-Analysis-Using-FFT-DFT-and-DTW
+
+   
+4. Install the dependencies by running:
 
     pip install numpy matplotlib pandas dtaidistance
 
 
-3. Change Directory - Run the following command in your terminal:
-    cd Data-Analysis-Using-FFT-DFT-and-DTW
-
-
-4. Verify Installation (Optional)
+5. Verify Installation (Optional)
 
 After installation is complete, you can verify that all the libraries are installed by running the following Python commands:
 
