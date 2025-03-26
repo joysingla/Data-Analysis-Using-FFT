@@ -23,7 +23,7 @@ scaled_magnitude = 10 * np.log10(magnitude)
 
 # Plotting the graph
 plt.figure(figsize=(10,8)) # Declares the size of graph(10 by 8 inches)
-plt.plot(freqs[0:len(freqs)//2], fft_result[0:len(freqs)//2])  
+plt.plot(freqs[0:len(freqs)//2], scaled_magnitude[0:len(freqs)//2])  
 plt.title('Magnitude by FFT Analysis Using Logarithmic Scaling (Shifted)')
 plt.xlabel('Frequency (Hz)')
 plt.ylabel('Amplitude (dB)')
