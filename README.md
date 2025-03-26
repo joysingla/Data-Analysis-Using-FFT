@@ -49,14 +49,11 @@ After activation, your terminal prompt should change to indicate you're working 
     cd Data-Analysis-Using-FFT-DFT-and-DTW
 
    
-4. Once your virtual environment is set up and activated, you need to install the required dependencies for the project.
-    Install the dependencies by running:
+4. Once your virtual environment is set up and activated, you need to install the required dependencies for the project. Install the dependencies by running:
        pip install numpy matplotlib pandas dtaidistance
 
 
-5. Verify Installation (Optional)
-
-After installation is complete, you can verify that all the libraries are installed by running the following Python commands:
+5. Verify Installation (Optional) - After installation is complete, you can verify that all the libraries are installed by running the following Python commands:
 
    import numpy as np
    import matplotlib.pyplot as plt
