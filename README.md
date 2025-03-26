@@ -52,7 +52,11 @@ Install the dependencies by running:
     pip install numpy matplotlib pandas dtaidistance
 
 
-3. Verify Installation (Optional)
+3. Change Directory - Run the following command in your terminal:
+    cd Data-Analysis-Using-FFT-DFT-and-DTW
+
+
+4. Verify Installation (Optional)
 
 After installation is complete, you can verify that all the libraries are installed by running the following Python commands:
 
