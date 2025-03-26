@@ -46,10 +46,12 @@ After activation, your terminal prompt should change to indicate you're working 
 
 
 3. Change Directory - Run the following command in your terminal:
-    cd Data-Analysis-Using-FFT-DFT-and-DTW
+
+   cd Data-Analysis-Using-FFT-DFT-and-DTW
 
    
 4. Once your virtual environment is set up and activated, you need to install the required dependencies for the project. Install the dependencies by running:
+
    pip install numpy matplotlib pandas dtaidistance
 
 
