@@ -19,7 +19,12 @@ Features -
 Installation Guide -
 
 This section provides detailed steps for setting up your environment and installing the required libraries to run the time series analysis project.
-1. Setting Up a Virtual Environment -It's a good practice to use a virtual environment to isolate your project's dependencies and avoid conflicts with other Python projects on your system. Using venv (Standard Library) create a Virtual Environment . Open a terminal and navigate to the project directory, then run:
+
+1. First, download the repository to your local machine:
+
+      git clone https://github.com/Karanveer69/Data-Analysis-Using-FFT-DFT-and-DTW.git
+
+2. Setting Up a Virtual Environment -It's a good practice to use a virtual environment to isolate your project's dependencies and avoid conflicts with other Python projects on your system. Using venv (Standard Library) create a Virtual Environment . Open a terminal and navigate to the project directory, then run:
 
    python3 -m venv venv
 
@@ -38,21 +43,15 @@ b.On macOS/Linux:
 After activation, your terminal prompt should change to indicate you're working inside the virtual environment.
 
    
-2. Installing Required Libraries
 
-Once your virtual environment is set up and activated, you need to install the required dependencies for the project.
-
-First, download the repository to your local machine:
-
-   git clone https://github.com/Karanveer69/Data-Analysis-Using-FFT-DFT-and-DTW.git
 
 3. Change Directory - Run the following command in your terminal:
     cd Data-Analysis-Using-FFT-DFT-and-DTW
 
    
-4. Install the dependencies by running:
-
-    pip install numpy matplotlib pandas dtaidistance
+4. Once your virtual environment is set up and activated, you need to install the required dependencies for the project.
+    Install the dependencies by running:
+       pip install numpy matplotlib pandas dtaidistance
 
 
 5. Verify Installation (Optional)
