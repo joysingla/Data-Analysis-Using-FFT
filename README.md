@@ -23,11 +23,11 @@ This section provides detailed steps for setting up your environment and install
         It's a good practice to use a virtual environment to isolate your project's dependencies and avoid conflicts with other Python projects on your system.
         Using venv (Standard Library)
 
-            Create a Virtual Environment
+   Create a Virtual Environment
 
             Open a terminal and navigate to the project directory, then run:
 
-        "python3 -m venv venv"
+                python3 -m venv venv
 
         This will create a folder named venv that contains the isolated environment.
 
@@ -35,7 +35,7 @@ Activate the Virtual Environment
 
     On Windows:
 
-".\venv\Scripts\activate"
+        .\venv\Scripts\activate
 
 On macOS/Linux:
 
@@ -51,7 +51,7 @@ Once your virtual environment is set up and activated, you need to install the r
 
 Install the dependencies by running:
 
-pip install numpy matplotlib pandas dtaidistance
+    pip install numpy matplotlib pandas dtaidistance
 
 
 3. Verify Installation (Optional)
