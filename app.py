@@ -1,5 +1,5 @@
 # Author: [Karanveer Singh]
-# LinkedIn : https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit
+# LinkedIn : https://www.linkedin.com/in/karanveer-singh-98b381339/
 # Date: [31st March 2025]
 # Description: This Streamlit web app allows users to upload one or two CSV files, visualize them interactively, 
 # detect peaks (maxima and minima) in the main file, and download the peak data as CSV files.
