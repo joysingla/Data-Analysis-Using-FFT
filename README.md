@@ -59,7 +59,7 @@ After activation, your terminal prompt should change to indicate you're working 
 
 ### 4. Install Required Dependencies
 ```sh
-pip install numpy matplotlib pandas dtaidistance
+pip install requirements.txt
 ```
 
 ### 5. Verify Installation (Optional)
