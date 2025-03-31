@@ -1,3 +1,6 @@
+# Author: [Karanveer Singh]
+# LinkedIn : https://www.linkedin.com/in/karanveer-singh-98b381339/
+# Date: [31st March 2025]
 import pandas as pd 
 import matplotlib.pyplot as mp 
 
