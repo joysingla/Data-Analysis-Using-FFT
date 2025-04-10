@@ -139,4 +139,3 @@ if uploaded_file1:
 
         fig_peaks2.update_layout(title="Peak Detection Graph (Second File)", xaxis_title="Timestamp", yaxis_title="Value", hovermode="x", template="plotly_dark")
         st.plotly_chart(fig_peaks2, use_container_width=True)
-
