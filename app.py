@@ -29,7 +29,7 @@ if uploaded_file1:
         time_deltas = np.diff(x1.astype(float))
         median_dt = np.median(time_deltas)
         auto_fs = int(round(1.0 / median_dt))
-        st.success(f"Auto-detected Sampling Frequency: {auto_fs} Hz")
+        # st.success(f"Auto-detected Sampling Frequency: {auto_fs} Hz")
     except:
         auto_fs = 2000
         st.warning("Could not auto-detect sampling frequency. Using default 2000 Hz.")
