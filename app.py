@@ -24,6 +24,18 @@ if uploaded_file1:
     x1 = data1[time_col1]
     y1 = data1[value_col1]
 
+    # Auto-detect Sampling Frequency
+    try:
+        time_deltas = np.diff(x1.astype(float))
+        median_dt = np.median(time_deltas)
+        auto_fs = int(round(1.0 / median_dt))
+        st.success(f"Auto-detected Sampling Frequency: {auto_fs} Hz")
+    except:
+        auto_fs = 2000
+        st.warning("Could not auto-detect sampling frequency. Using default 2000 Hz.")
+
+    sampling_frequency = st.number_input("Enter Sampling Frequency (Hz)", min_value=1, max_value=10000, value=auto_fs, step=1)
+
     fig = go.Figure()
     fig.add_trace(go.Scatter(x=x1, y=y1, mode='lines', name='1st Graph', line=dict(color='red')))
 
@@ -40,9 +52,8 @@ if uploaded_file1:
     fig.update_layout(title="Interactive Graph: Main and Optional File", xaxis_title="Timestamp", yaxis_title="Selected Data Column", hovermode="x", template="plotly_dark")
     st.plotly_chart(fig, use_container_width=True)
 
+    # FFT Analysis for Main File
     st.subheader("FFT Analysis of IMU Data")
-    sampling_frequency = st.number_input("Enter Sampling Frequency (Hz)", min_value=1, max_value=10000, value=2000, step=1)
-
     N = len(y1)
     fft_result1 = np.fft.fft(y1)
     freqs1 = np.fft.fftfreq(N, 1/sampling_frequency)
@@ -57,6 +68,7 @@ if uploaded_file1:
     fig_fft1.update_layout(title="FFT Analysis (Main File)", xaxis_title="Frequency (Hz)", yaxis_title="Amplitude (dB)", hovermode="x", template="plotly_dark")
     st.plotly_chart(fig_fft1, use_container_width=True)
 
+    # FFT Analysis for Second File
     if uploaded_file2:
         N2 = len(y2)
         fft_result2 = np.fft.fft(y2)
@@ -78,15 +90,15 @@ if uploaded_file1:
         fig_fft_combined.update_layout(title="Combined FFT Analysis (Main & Second File)", xaxis_title="Frequency (Hz)", yaxis_title="Amplitude (dB)", hovermode="x", template="plotly_dark")
         st.plotly_chart(fig_fft_combined, use_container_width=True)
 
+    # Peak Detection for Main File
     st.subheader("Peak Detection & CSV Export (*For Main File Only)")
-
     maxima, _ = find_peaks(y1)
     minima, _ = find_peaks(-y1)
 
     maxima_values = y1.iloc[maxima].values
     minima_values = y1.iloc[minima].values
-    maxima_timestamps = x1.iloc[maxima].values.astype(float)
-    minima_timestamps = x1.iloc(minima).values.astype(float)
+    maxima_timestamps = x1.iloc[maxima].astype(float).values
+    minima_timestamps = x1.iloc[minima].astype(float).values
 
     maxima_slopes = np.diff(maxima_values) / np.diff(maxima_timestamps) if len(maxima_values) > 1 else []
     minima_slopes = np.diff(minima_values) / np.diff(minima_timestamps) if len(minima_values) > 1 else []
@@ -110,14 +122,15 @@ if uploaded_file1:
     fig_peaks.update_layout(title="Peak Detection Graph (Main File)", xaxis_title="Timestamp", yaxis_title="Value", hovermode="x", template="plotly_dark")
     st.plotly_chart(fig_peaks, use_container_width=True)
 
+    # Peak Detection for Second File
     if uploaded_file2:
         maxima2, _ = find_peaks(y2)
         minima2, _ = find_peaks(-y2)
 
         maxima_values2 = y2.iloc[maxima2].values
         minima_values2 = y2.iloc[minima2].values
-        maxima_timestamps2 = x2.iloc[maxima2].values.astype(float)
-        minima_timestamps2 = x2.iloc[minima2].values.astype(float)
+        maxima_timestamps2 = x2.iloc[maxima2].astype(float).values
+        minima_timestamps2 = x2.iloc[minima2].astype(float).values
 
         fig_peaks2 = go.Figure()
         fig_peaks2.add_trace(go.Scatter(x=x2, y=y2, mode='lines', name="Original Data", line=dict(color="black")))
@@ -126,3 +139,4 @@ if uploaded_file1:
 
         fig_peaks2.update_layout(title="Peak Detection Graph (Second File)", xaxis_title="Timestamp", yaxis_title="Value", hovermode="x", template="plotly_dark")
         st.plotly_chart(fig_peaks2, use_container_width=True)
+
