@@ -38,11 +38,11 @@ if uploaded_file1:
 
         fig.add_trace(go.Scatter(x=x2, y=y2, mode='lines', name='2nd Graph', line=dict(color='blue')))
 
-    fig.update_layout(title="Interactive Graph", xaxis_title="Timestamp", yaxis_title="Selected Data Column",
+    fig.update_layout(title="Graph for Peak Detecton (2nd File)", xaxis_title="Timestamp", yaxis_title="Selected Data Column",
                       hovermode="x", template="plotly_dark")
     st.plotly_chart(fig, use_container_width=True)
 
-    st.subheader("Peak Detection & CSV Export (*For Main File Only)")
+    st.subheader("Peak Detection & CSV Export (*For 1st File Only)")
     maxima, _ = find_peaks(y1)
     minima, _ = find_peaks(-y1)
 
