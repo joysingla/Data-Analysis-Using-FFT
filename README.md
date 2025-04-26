@@ -3,7 +3,9 @@
 ## Author: [Karanveer Singh]
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Karanveer%20Singh-blue)](https://www.linkedin.com/in/karanveer-singh-98b381339/)
 
-**Date:** 31st March 2025
+📅 **Date:** 31st March 2025  
+🌐 **Live Streamlit App:** [Click here to try the app](https://data-analysis-comparision-and-peaks.streamlit.app/)  
+📂 **GitHub Repo:** [Data-Analysis-Using-FFT-DFT-and-DTW](https://github.com/Karanveer69/Data-Analysis-Using-FFT-DFT-and-DTW)
 
 ---
 
@@ -14,12 +16,16 @@ This project is designed for applications such as **sensor data analysis, motion
 
 ---
 
-## Features
+## 🎯 Features
 
-- **FFT (Fast Fourier Transform):** Computes the Discrete Fourier Transform (DFT) efficiently for frequency domain analysis.
-- **DFT (Discrete Fourier Transform):** Helps in understanding the frequency components in the time series data.
-- **DTW (Dynamic Time Warping):** Measures similarity between two time series, even when they vary in speed.
-- **Generalized Code:** Modular and customizable for different datasets and use cases.
+- ✅ **Interactive Streamlit App** for seamless user experience — no coding required!
+- 📈 **Simple Time Series Plot** of acceleration vs timestamp.
+- ⚡ **FFT Plot** to analyze frequency components.
+- 🔄 **Compare Two Files** — visualize and compare time series and FFTs side-by-side.
+- 🌊 **DTW Comparison** to assess similarity between two signals.
+- 🚩 **Automatic Peak Detection** in the data.
+- 📥 **Downloadable Output** — graphs, FFT results, and peak info can all be downloaded as CSV.
+- 🧩 **Modular Python Scripts** — for users who prefer using the code directly.
 
 ---
 
