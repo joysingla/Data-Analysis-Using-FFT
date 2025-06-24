@@ -1,11 +1,11 @@
 # Time Series Data Analysis using FFT, DFT, and DTW
 
-## Author: [Karanveer Singh]
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Karanveer%20Singh-blue)](https://www.linkedin.com/in/karanveer-singh-98b381339/)
+## Author: [joy singla]
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Karanveer%20Singh-blue)](https://www.linkedin.com/in/joy-singla-923005357/)
 
 📅 **Date:** 31st March 2025  
 🌐 **Live Streamlit App:** [Click here to try the app](https://data-analysis-comparision-and-peaks.streamlit.app/)  
-📂 **GitHub Repo:** [Data-Analysis-Using-FFT-DFT-and-DTW](https://github.com/Karanveer69/Data-Analysis-Using-FFT-DFT-and-DTW)
+📂 **GitHub Repo:** [Data-Analysis-Using-FFT-DFT-and-DTW](https://github.com/joysingla/Data-Analysis-Using-FFT)
 
 ---
 
